@@ -1,0 +1,63 @@
+Based on the codebase analysis, this is a Flowchart Builder application built with React and TypeScript. Here's a detailed description of the project:
+Project Overview:
+This is an interactive flowchart/diagramming tool that allows users to create, edit, and manage flowcharts with various types of nodes and connections. The application provides a modern, user-friendly interface with both light and dark mode support.
+Key Features:
+Node Types:
+Rectangle nodes
+Rounded rectangle nodes
+Circle nodes
+Ellipse nodes
+Triangle nodes
+Diamond nodes
+Bubble nodes
+Text nodes
+Sticky notes
+Drawing Capabilities:
+Freehand drawing tool
+Adjustable brush size
+Color selection
+Eraser functionality
+Node Customization:
+Color customization
+Size adjustment (width and height)
+Text editing
+Text styling (font size, color, bold, italic)
+Label editing
+Flow Management:
+Drag and drop node creation
+Node connections with arrows
+Node duplication
+Node deletion
+Automatic edge cleanup when nodes are deleted
+File Operations:
+Save flowchart as JSON
+Load saved flowcharts
+Export as PNG image
+User Experience:
+Dark/Light mode support
+Undo/Redo functionality
+History tracking
+Responsive design
+Drag handles for easy node movement
+Grid background for alignment
+Technical Stack:
+React with TypeScript
+ReactFlow for flowchart rendering
+Zustand for state management
+Tailwind CSS for styling
+Vite as the build tool
+Architecture:
+The application uses a component-based architecture
+State management is handled through Zustand store
+Custom hooks for specific functionalities
+Modular component structure for maintainability
+Use Cases:
+This flowchart builder can be used for:
+Process mapping
+Workflow visualization
+System architecture diagrams
+Decision trees
+Mind mapping
+Project planning
+Educational purposes
+The application is designed to be intuitive and user-friendly while providing powerful features for creating professional-looking flowcharts and diagrams.

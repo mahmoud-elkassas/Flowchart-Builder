@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #4b5563;
+  --color-background: #f8fafc;
+  --color-toolbar: #ffffff;
+  --color-border: #e2e8f0;
+}
+
+:root[class~="dark"] {
+  --color-primary: #3b82f6;
+  --color-secondary: #9ca3af;
+  --color-background: #1a202c;
+  --color-toolbar: #2d3748;
+  --color-border: #4a5568;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border: 2px solid white;
+}
+
+.react-flow__handle:hover {
+  background-color: #1d4ed8;
+}
+
+.react-flow__edge-path {
+  stroke: var(--color-secondary);
+  stroke-width: 2;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-border);
+  padding: 8px;
+}
+
+.react-flow__controls-button:hover {
+  background: var(--color-background);
+}
+
+.react-flow__background {
+  background-color: var(--color-background);
+}
+
+/* Hide React Flow attribution */
+.react-flow__attribution {
+  display: none;
+}
+
+/* Dark mode styles for React Flow */
+.dark .react-flow__edge-path {
+  stroke: #e2e8f0;
+}
+
+.dark .react-flow__handle {
+  border-color: #2d3748;
+}
+
+.dark .react-flow__controls-button {
+  color: #e2e8f0;
+}
+
+.dark .react-flow__controls-button:hover {
+  background-color: #4a5568;
+}
+
+/* Custom cursors */
+.cursor-pencil {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E") 0 24, crosshair;
+}
+
+.dark .cursor-pencil {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E") 0 24, crosshair;
+}
+
+.cursor-eraser {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21'/%3E%3Cpath d='M22 21H7'/%3E%3Cpath d='m5 11 9 9'/%3E%3C/svg%3E") 0 24, crosshair;
+}
+
+.dark .cursor-eraser {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21'/%3E%3Cpath d='M22 21H7'/%3E%3Cpath d='m5 11 9 9'/%3E%3C/svg%3E") 0 24, crosshair;
+}
